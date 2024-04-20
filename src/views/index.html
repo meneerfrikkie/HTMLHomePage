@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTMLHomePage</title>
+    <title>Home</title>
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <!-- The gradient background applied to the body -->
-    <div class="container">
+    <div id="container" class="container">
         <!-- Centered div box -->
         <h1>Website Title</h1>
-        <!-- Game title -->
+        <!-- Website title -->
         <h2>Sub Title</h2>
         <!-- Sub title -->
-        <button id="startGameBtn" class="btn-start">Enter Website</button>
+        <button id="enterWebsite" class="btn-start">Enter Website</button>
         <!-- Start button -->
     </div>
+
+    <div id="accountDiv" style="display: none;">
+        <!-- Dynamic content will be inserted here -->
+    </div>
+
+    <script src="/scripts/classes/index.js"></script>
+    <!-- Link to custom script that handles fetching and displaying data -->
 </body>
 </html>
