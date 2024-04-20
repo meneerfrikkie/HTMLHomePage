@@ -1,0 +1,61 @@
+/* Defining of gray color palette as constants */
+:root {
+    --gray-light: #f3f3f3;
+    --gray-dark: #dcdcdc;
+    --gray-button: #6c757d;
+}
+
+/* Set up of a dynamic gradient background of grays */
+body {
+    background: linear-gradient(45deg, var(--gray-light), var(--gray-dark));
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the centered box */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 60%; /* Set width to 60% of the viewport width */
+    max-width: 400px; /* Limit maximum width */
+    height: 40vh; /* Set height to 60% of the viewport height */
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Adjust padding for h1 */
+.container h1 {
+    margin-top: 10px; /* Remove default margin */
+    margin-bottom: 0px; /* Add bottom margin */
+}
+
+/* Adjust padding for h2 */
+.container h2 {
+    margin-top: 10px; /* Remove default margin */
+    margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* Style for the start button */
+.btn-start {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: var(--gray-button);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Transition for button background-color */
+}
+
+.btn-start:hover {
+    background-color: #5a6268; /* Darken the button on hover */
+}
